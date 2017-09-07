@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ReactNative, { Text } from 'react-native';
+import { Text, AppRegistry } from 'react-native';
 
 // Create a component
 
@@ -16,4 +16,4 @@ class App extends Component {
 }
 
 // Render it to the device
-ReactNative.AppRegistry.registerComponent('albums', () => App);
+AppRegistry.registerComponent('albums', () => App);
