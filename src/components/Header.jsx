@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import ReactNative from 'react-native';
+import ReactNative, { Text, AppRegistry } from 'react-native';
 
 const Header = () => (
-  return <Text></Text>;
+  <Text>Albums!</Text>;
 );
+
+AppRegistry.registerComponent('albums', () => App);
+
 
