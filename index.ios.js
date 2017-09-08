@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Text, AppRegistry } from 'react-native';
-import Header from './src/components/Header.js';
+import { Text, View, AppRegistry } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create a component
 
@@ -11,7 +12,10 @@ class App extends Component {
 
   render() {
     return (
-      <Header />
+      <View>
+        <Header headerText={'Barbell'} />
+        <AlbumList />
+      </View>
     );
   }
 }
