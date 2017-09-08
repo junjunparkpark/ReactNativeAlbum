@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Text, AppRegistry } from 'react-native';
-import Header from './src/components';
+import Header from './src/components/Header.js';
 
 // Create a component
 
@@ -11,7 +11,7 @@ class App extends Component {
 
   render() {
     return (
-      <Header/>
+      <Header />
     );
   }
 }
