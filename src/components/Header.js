@@ -2,24 +2,24 @@ import React from 'react';
 import { Text, View } from 'react-native';
 
 const Header = () => {
-  const { textStyle } = styles;
+  const { textStyle, viewStyle } = styles;
 
   return (
-    <View>
+    <View style={viewStyle}>
       <Text style={textStyle}>Albums!</Text>
     </View>
   );
 };
 
 const styles = {
-  viewStlye: {
-
+  viewStyle: {
+    backgroundColor: 'red'
   },
-  
+
   textStyle: {
     fontSize: 40
   }
-}
+};
 
 export default Header;
 
