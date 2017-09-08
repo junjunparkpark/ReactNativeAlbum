@@ -13,11 +13,16 @@ const Header = () => {
 
 const styles = {
   viewStyle: {
-    backgroundColor: 'red'
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 60,
+    paddingTop: 15
   },
 
   textStyle: {
-    fontSize: 40
+    fontSize: 20,
+    color: 'white'
   }
 };
 
