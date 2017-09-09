@@ -7,14 +7,24 @@ class AlbumList extends Component {
     super(props);
 
     this.state = {
+      url: 'https://rallycoding.herokuapp.com/api/music_albums',
       albums: []
     };
   }
 
-  fetchAlbums() {
-    axios.get({
+  componentWillMount() {
+    this.fetchAlbums();
+  }
 
-    });
+  fetchAlbums() {
+    axios.get(this.state.url)
+      .then((response) => {
+        console.log('SUCCESS Fetching Albums');
+        this.setState({ albums: response.data });
+      })
+      .catch((error) => {
+        console.log('ERROR Fetching Albums: ', error);
+      });
   }
 
   render() {
@@ -24,6 +34,6 @@ class AlbumList extends Component {
       </View>
     );
   }
-};
+}
 
 export default AlbumList;
