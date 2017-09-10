@@ -5,8 +5,8 @@ const AlbumListItem = (props) => {
   const { viewStyle, textStyle } = styles;
 
   return (
-    <View>
-      <Image source={{uri: props.album.url}} />
+    <View style={viewStyle} >
+      <Image source={{ url: props.album.image }} />
       <Text style={textStyle}>Title: {props.album.title}</Text>
       <Text style={textStyle}>Artist: {props.album.artist}</Text>
     </View>
