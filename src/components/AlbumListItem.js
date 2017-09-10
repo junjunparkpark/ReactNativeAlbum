@@ -1,20 +1,20 @@
-import React from 'React';
-import { Text, View } from 'react-native';
+import React from 'react';
+import { Text, View, Image } from 'react-native';
 
 const AlbumListItem = (props) => {
   const { viewStyle, textStyle } = styles;
 
   return (
     <View>
-      <Text style={textStyle}>Artist: {props.album.artist}</Text>
+      <Image source={{uri: props.album.url}} />
       <Text style={textStyle}>Title: {props.album.title}</Text>
+      <Text style={textStyle}>Artist: {props.album.artist}</Text>
     </View>
   );
 };
 
 const styles = {
   viewStyle: {
-    backgroundColor: 'black',
     justifyContent: 'center',
     alignItems: 'center',
     height: 60,
