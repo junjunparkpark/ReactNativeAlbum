@@ -2,17 +2,30 @@ import React from 'React';
 import { Text, View } from 'react-native';
 
 const AlbumListItem = (props) => {
+  const { viewStyle, textStyle } = styles;
 
   return (
     <View>
-      <Text>Artist: {props.album.artist}</Text>
-      <Text>Title: {props.album.title}</Text>
+      <Text style={textStyle}>Artist: {props.album.artist}</Text>
+      <Text style={textStyle}>Title: {props.album.title}</Text>
     </View>
   );
 };
 
 const styles = {
+  viewStyle: {
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 60,
+    paddingTop: 15,
+    elevation: 2,
+    position: 'relative'
+  },
 
+  textStyle: {
+    fontSize: 20,
+  }
 };
 
 export default AlbumListItem;
