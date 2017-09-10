@@ -33,9 +33,9 @@ class AlbumList extends Component {
   render() {
 
     return (
-      <Card>
+      <View>
         {this.state.albums.map(album => <AlbumListItem album={album} />)}
-      </Card>
+      </View>
     );
   }
 }

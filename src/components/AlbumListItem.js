@@ -8,10 +8,10 @@ const AlbumListItem = (props) => {
   const { viewStyle } = styles;
 
   return (
-    <Card.Body style={viewStyle} >
+    <View style={viewStyle} >
       <AlbumDetail title={props.album.title} artist={props.album.title} />
-      <Image source={{ url: props.album.image }} />
-    </Card.Body>
+      <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}} />
+    </View>
   );
 };
 

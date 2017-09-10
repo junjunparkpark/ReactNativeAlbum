@@ -4,11 +4,11 @@ import { Card } from 'react-native-material-design';
 
 const AlbumDetail = (props) => {
   return (
-    <Card.Body>
-      <Image />
+    <View>
+      <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}} />
       <Text style={textStyle}>Title: {props.album.title}</Text>
       <Text style={textStyle}>Artist: {props.album.artist}</Text>
-    </Card.Body>
+    </View>
   );
 };
 
