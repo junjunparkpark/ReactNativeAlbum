@@ -1,13 +1,20 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, CardItem, Image } from 'react-native';
 
 const AlbumDetail = (props) => {
   return (
-    <View>
+    <CardItem>
+      <Image />
       <Text style={textStyle}>Title: {props.album.title}</Text>
       <Text style={textStyle}>Artist: {props.album.artist}</Text>
-    </View>
+    </CardItem>
   );
 };
+
+const styles = {
+  textStyle: {
+    fontSize: 20,
+  }
+}
 
 export default AlbumDetail;

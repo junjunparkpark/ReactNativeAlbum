@@ -1,15 +1,15 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { View, Image, CardItem } from 'react-native';
+import AlbumDetail from './AlbumDetail';
 
 const AlbumListItem = (props) => {
-  const { viewStyle, textStyle } = styles;
+  const { viewStyle } = styles;
 
   return (
-    <View style={viewStyle} >
+    <CardItem style={viewStyle} >
+      <AlbumDetail title={props.album.title} artist={props.album.title} />
       <Image source={{ url: props.album.image }} />
-      <Text style={textStyle}>Title: {props.album.title}</Text>
-      <Text style={textStyle}>Artist: {props.album.artist}</Text>
-    </View>
+    </CardItem>
   );
 };
 
@@ -21,10 +21,6 @@ const styles = {
     paddingTop: 15,
     elevation: 2,
     position: 'relative'
-  },
-
-  textStyle: {
-    fontSize: 20,
   }
 };
 

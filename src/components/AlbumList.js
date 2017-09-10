@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Card } from 'react-native';
 import axios from 'axios';
 import AlbumListItem from './AlbumListItem';
 import AlbumDetail from './AlbumDetail';
@@ -32,9 +32,9 @@ class AlbumList extends Component {
   render() {
 
     return (
-      <View>
+      <Card>
         {this.state.albums.map(album => <AlbumListItem album={album} />)}
-      </View>
+      </Card>
     );
   }
 }
