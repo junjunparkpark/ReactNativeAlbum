@@ -1,13 +1,14 @@
 import React from 'react';
-import { View, Text, CardItem, Image } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import { Card } from 'react-native-material-design';
 
 const AlbumDetail = (props) => {
   return (
-    <CardItem>
+    <Card.Body>
       <Image />
       <Text style={textStyle}>Title: {props.album.title}</Text>
       <Text style={textStyle}>Artist: {props.album.artist}</Text>
-    </CardItem>
+    </Card.Body>
   );
 };
 

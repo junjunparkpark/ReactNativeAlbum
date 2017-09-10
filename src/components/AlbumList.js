@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { View, Card } from 'react-native';
+import { View } from 'react-native';
+import { Card } from 'react-native-material-design';
 import axios from 'axios';
 import AlbumListItem from './AlbumListItem';
 import AlbumDetail from './AlbumDetail';

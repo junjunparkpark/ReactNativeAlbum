@@ -1,15 +1,17 @@
 import React from 'react';
-import { View, Image, CardItem } from 'react-native';
+import { View, Image } from 'react-native';
+import { Card } from 'react-native-material-design';
+
 import AlbumDetail from './AlbumDetail';
 
 const AlbumListItem = (props) => {
   const { viewStyle } = styles;
 
   return (
-    <CardItem style={viewStyle} >
+    <Card.Body style={viewStyle} >
       <AlbumDetail title={props.album.title} artist={props.album.title} />
       <Image source={{ url: props.album.image }} />
-    </CardItem>
+    </Card.Body>
   );
 };
 
