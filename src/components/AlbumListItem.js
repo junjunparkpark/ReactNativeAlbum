@@ -1,4 +1,4 @@
-import React from 'React':
+import React from 'React';
 import { Text, View } from 'react-native';
 
 const AlbumListItem = (props) => {
@@ -9,6 +9,10 @@ const AlbumListItem = (props) => {
       <Text>Title: {props.album.title}</Text>
     </View>
   );
+};
+
+const styles = {
+
 };
 
 export default AlbumListItem;

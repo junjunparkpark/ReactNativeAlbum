@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import axios from 'axios';
 import AlbumListItem from './AlbumListItem';
+import AlbumDetail from './AlbumDetail';
 
 class AlbumList extends Component {
   constructor(props) {
@@ -29,6 +30,7 @@ class AlbumList extends Component {
   }
 
   render() {
+
     return (
       <View>
         {this.state.albums.map(album => <AlbumListItem album={album} />)}
