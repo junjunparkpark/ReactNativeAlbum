@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, Image } from 'react-native';
-import { Card } from 'react-native-material-design';
 
 const AlbumDetail = (props) => {
   return (
