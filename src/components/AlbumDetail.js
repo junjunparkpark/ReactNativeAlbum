@@ -1,13 +1,13 @@
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { Text, Image } from 'react-native';
+import Card from './Card';
 
 const AlbumDetail = (props) => {
   return (
-    <View>
-      <Image source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}} />
+    <Card>
       <Text style={textStyle}>Title: {props.album.title}</Text>
       <Text style={textStyle}>Artist: {props.album.artist}</Text>
-    </View>
+    </Card>
   );
 };
 
