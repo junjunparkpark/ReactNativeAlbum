@@ -22,7 +22,7 @@ class AlbumList extends Component {
   fetchAlbums() {
     axios.get(this.state.url)
       .then((response) => {
-        console.log('SUCCESS Fetching Albums');
+        console.log('SUCCESS Fetching Albums', response);
         this.setState({ albums: response.data });
       })
       .catch((error) => {
@@ -34,7 +34,7 @@ class AlbumList extends Component {
 
     return (
       <View>
-        {this.state.albums.map(album => <Card album={album} />)}
+        {this.state.albums.map(album => <h1>{album.title}</h1>)}
       </View>
     );
   }
